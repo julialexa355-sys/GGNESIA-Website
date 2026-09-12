@@ -46,7 +46,7 @@ async function loadNews() {
     `;
 
     const rssUrl =
-        "https://news.google.com/rss/search?q=game%20OR%20esports%20Indonesia&hl=id&gl=ID&ceid=ID:id";
+    "https://news.google.com/rss/search?q=Mobile%20Legends%20Indonesia&hl=id&gl=ID&ceid=ID:id";
 
     const apiUrl =
         "https://api.rss2json.com/v1/api.json?rss_url=" +
