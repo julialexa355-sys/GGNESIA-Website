@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>GGNesia - Dunia Game & Esports</title>
+
+  <meta name="description"
+        content="GGNesia adalah portal berita game dan esports Indonesia.">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+
+    <div class="logo-area">
+      <h1>GGNesia</h1>
+      <p>Dunia Game & Esports Indonesia</p>
+    </div>
+
+    <button class="menu-button" onclick="toggleMenu()">
+      ☰
+    </button>
+
+  </header>
+
+
+  <!-- NAVIGATION -->
+  <nav id="mainNav">
+
+    <a href="#home">Home</a>
+    <a href="#berita">Berita</a>
+    <a href="#game">Game</a>
+    <a href="#esports">Esports</a>
+    <a href="#turnamen">Turnamen</a>
+
+  </nav>
+
+
+  <main id="home">
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+      <div class="hero-content">
+
+        <span class="category">
+          🔥 BERITA TERBARU
+        </span>
+
+        <h2>
+          Semua Tentang Dunia Game & Esports
+        </h2>
+
+        <p>
+          Berita terbaru, update game, turnamen esports,
+          tim, pemain dan perkembangan industri game Indonesia.
+        </p>
+
+        <a href="#berita" class="primary-button">
+          Jelajahi Berita →
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- GAME POPULER -->
+    <section id="game" class="section">
+
+      <div class="section-title">
+        <span></span>
+        <h2>Game Populer</h2>
+      </div>
+
+      <div class="game-grid">
+
+
+        <a href="#" class="game-card ml">
+
+          <div class="game-info">
+            <small>MOBA</small>
+            <h3>Mobile Legends</h3>
+            <p>Berita • Update • Esports</p>
+          </div>
+
+        </a>
+
+
+        <a href="#" class="game-card pubg">
+
+          <div class="game-info">
+            <small>BATTLE ROYALE</small>
+            <h3>PUBG Mobile</h3>
+            <p>Berita • Update • Turnamen</p>
+          </div>
+
+        </a>
+
+
+        <a href="#" class="game-card ff">
+
+          <div class="game-info">
+            <small>BATTLE ROYALE</small>
+            <h3>Free Fire</h3>
+            <p>Berita • Update • Esports</p>
+          </div>
+
+        </a>
+
+
+        <a href="#" class="game-card genshin">
+
+          <div class="game-info">
+            <small>RPG</small>
+            <h3>Genshin Impact</h3>
+            <p>Update • Event • Guide</p>
+          </div>
+
+        </a>
+
+
+        <a href="#" class="game-card dota">
+
+          <div class="game-info">
+            <small>MOBA</small>
+            <h3>Dota 2</h3>
+            <p>Berita • Turnamen • Esports</p>
+          </div>
+
+        </a>
+
+
+        <a href="#" class="game-card valorant">
+
+          <div class="game-info">
+            <small>FPS</small>
+            <h3>Valorant</h3>
+            <p>Berita • Update • Esports</p>
+          </div>
+
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- BERITA -->
+    <section id="berita" class="section">
+
+      <div class="section-title">
+        <span></span>
+        <h2>Berita Terbaru</h2>
+      </div>
+
+
+      <!-- SEARCH -->
+      <div class="search-box">
+
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="🔎 Cari berita atau game..."
+          onkeyup="searchNews()"
+        >
+
+      </div>
+
+
+      <div id="newsList" class="news-grid">
+
+
+        <article class="news-card">
+
+          <div class="news-image image-one"></div>
+
+          <div class="news-content">
+
+            <span>GAME</span>
+
+            <h3>
+              Perkembangan Terbaru Dunia Game Indonesia
+            </h3>
+
+            <p>
+              Informasi mengenai perkembangan industri game
+              dan komunitas gaming di Indonesia.
+            </p>
+
+            <small>13 September 2026</small>
+
+          </div>
+
+        </article>
+
+
+        <article class="news-card">
+
+          <div class="news-image image-two"></div>
+
+          <div class="news-content">
+
+            <span>ESPORTS</span>
+
+            <h3>
+              Perkembangan Kompetisi Esports Indonesia
+            </h3>
+
+            <p>
+              Ikuti kabar kompetisi, tim dan pemain esports
+              dari berbagai game populer.
+            </p>
+
+            <small>13 September 2026</small>
+
+          </div>
+
+        </article>
+
+
+        <article class="news-card">
+
+          <div class="news-image image-three"></div>
+
+          <div class="news-content">
+
+            <span>UPDATE</span>
+
+            <h3>
+              Update Game dan Event Terbaru
+            </h3>
+
+            <p>
+              Berbagai update dan event menarik dari game
+              favorit para pemain.
+            </p>
+
+            <small>13 September 2026</small>
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- ESPORTS -->
+    <section id="esports" class="section">
+
+      <div class="section-title">
+        <span></span>
+        <h2>Esports</h2>
+      </div>
+
+
+      <div class="esports-grid">
+
+
+        <div class="esports-box">
+
+          <div class="icon">🏆</div>
+
+          <h3>Turnamen</h3>
+
+          <p>
+            Jadwal dan informasi kompetisi esports
+            dari berbagai game.
+          </p>
+
+          <a href="#turnamen">
+            Lihat Turnamen →
+          </a>
+
+        </div>
+
+
+        <div class="esports-box">
+
+          <div class="icon">👥</div>
+
+          <h3>Tim & Pemain</h3>
+
+          <p>
+            Kenali tim dan pemain esports dari
+            berbagai kompetisi.
+          </p>
+
+          <a href="#">
+            Lihat Tim →
+          </a>
+
+        </div>
+
+
+        <div class="esports-box">
+
+          <div class="icon">📊</div>
+
+          <h3>Hasil Pertandingan</h3>
+
+          <p>
+            Ikuti hasil pertandingan dan perjalanan
+            tim favoritmu.
+          </p>
+
+          <a href="#">
+            Lihat Hasil →
+          </a>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- TURNAMEN -->
+    <section id="turnamen" class="section">
+
+      <div class="section-title">
+        <span></span>
+        <h2>Turnamen Mendatang</h2>
+      </div>
+
+
+      <div class="tournament-list">
+
+
+        <div class="tournament">
+
+          <div class="tournament-icon">
+            🎮
+          </div>
+
+          <div>
+            <h3>Mobile Legends</h3>
+            <p>Turnamen Esports</p>
+          </div>
+
+          <strong>
+            Coming Soon
+          </strong>
+
+        </div>
+
+
+        <div class="tournament">
+
+          <div class="tournament-icon">
+            🔫
+          </div>
+
+          <div>
+            <h3>PUBG Mobile</h3>
+            <p>Turnamen Esports</p>
+          </div>
+
+          <strong>
+            Coming Soon
+          </strong>
+
+        </div>
+
+
+        <div class="tournament">
+
+          <div class="tournament-icon">
+            🔥
+          </div>
+
+          <div>
+            <h3>Free Fire</h3>
+            <p>Turnamen Esports</p>
+          </div>
+
+          <strong>
+            Coming Soon
+          </strong>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <h2>GGNesia</h2>
+
+    <p>
+      Dunia Game & Esports Indonesia
+    </p>
+
+    <div class="footer-links">
+
+      <a href="#home">Home</a>
+      <a href="#berita">Berita</a>
+      <a href="#game">Game</a>
+      <a href="#esports">Esports</a>
+
+    </div>
+
+    <small>
+      © 2026 GGNesia. All Rights Reserved.
+    </small>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+  </html>
