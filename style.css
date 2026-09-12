@@ -1,0 +1,611 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #070b14;
+  color: #f5f7ff;
+  line-height: 1.6;
+}
+
+
+/* HEADER */
+
+.site-header {
+  min-height: 190px;
+  background:
+    radial-gradient(circle at 50% 0%, #172d5a, #0d1425 55%, #080c16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-bottom: 2px solid #2878ff;
+}
+
+.logo-area {
+  text-align: center;
+}
+
+.logo-area h1 {
+  font-size: 52px;
+  letter-spacing: 3px;
+  color: #4b91ff;
+  text-shadow: 0 0 25px rgba(75, 145, 255, .45);
+}
+
+.logo-area p {
+  color: #aeb9cd;
+  margin-top: 8px;
+  font-size: 17px;
+}
+
+
+/* MENU */
+
+.menu-button {
+  display: none;
+  background: #172033;
+  color: white;
+  border: 1px solid #33415c;
+  border-radius: 8px;
+  font-size: 24px;
+  padding: 8px 12px;
+}
+
+
+/* NAV */
+
+nav {
+  height: 64px;
+  background: #111827;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #202b40;
+}
+
+nav a {
+  color: #e8edf7;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: .2s;
+}
+
+nav a:hover {
+  color: #4b91ff;
+}
+
+
+/* MAIN */
+
+main {
+  max-width: 1150px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.section {
+  margin-bottom: 70px;
+}
+
+
+/* HERO */
+
+.hero {
+  min-height: 430px;
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #08101f 0%,
+      rgba(8,16,31,.90) 40%,
+      rgba(8,16,31,.30) 100%
+    ),
+    url("https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1600&q=80");
+
+  background-size: cover;
+  background-position: center;
+
+  border: 1px solid #2b3b59;
+  box-shadow: 0 25px 60px rgba(0,0,0,.35);
+}
+
+.hero-content {
+  max-width: 650px;
+  padding: 45px;
+}
+
+.category {
+  display: inline-block;
+  background: #2878ff;
+  padding: 8px 14px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero h2 {
+  font-size: 44px;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  color: #c0cadc;
+  font-size: 17px;
+  margin-bottom: 28px;
+}
+
+.primary-button {
+  display: inline-block;
+  background: #2878ff;
+  color: white;
+  padding: 13px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/* SECTION TITLE */
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.section-title span {
+  width: 6px;
+  height: 42px;
+  background: #3d8bff;
+  border-radius: 3px;
+}
+
+.section-title h2 {
+  font-size: 30px;
+}
+
+
+/* GAME */
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.game-card {
+  min-height: 230px;
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #293751;
+  transition: .25s;
+}
+
+.game-card:hover {
+  transform: translateY(-6px);
+  border-color: #3d8bff;
+}
+
+.game-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 22px;
+  background: linear-gradient(
+    transparent,
+    rgba(3,7,15,.96)
+  );
+}
+
+.game-info small {
+  color: #75aaff;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.game-info h3 {
+  color: white;
+  font-size: 22px;
+  margin: 4px 0;
+}
+
+.game-info p {
+  color: #c2ccdc;
+  font-size: 13px;
+}
+
+
+/* GAME IMAGES */
+
+.ml {
+  background-image:
+    url("https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=900&q=80");
+}
+
+.pubg {
+  background-image:
+    url("https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=900&q=80");
+}
+
+.ff {
+  background-image:
+    url("https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=900&q=80");
+}
+
+.genshin {
+  background-image:
+    url("https://images.unsplash.com/photo-1560419015-7c427e8ae5ba?auto=format&fit=crop&w=900&q=80");
+}
+
+.dota {
+  background-image:
+    url("https://images.unsplash.com/photo-1547394765-185e1e68f34e?auto=format&fit=crop&w=900&q=80");
+}
+
+.valorant {
+  background-image:
+    url("https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=900&q=80");
+}
+
+
+/* SEARCH */
+
+.search-box {
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 15px 18px;
+  border-radius: 10px;
+  border: 1px solid #2b3b59;
+  background: #111827;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-box input:focus {
+  border-color: #3d8bff;
+}
+
+
+/* NEWS */
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.news-card {
+  background: #111827;
+  border: 1px solid #27354e;
+  border-radius: 17px;
+  overflow: hidden;
+  transition: .25s;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+  border-color: #3d8bff;
+}
+
+.news-image {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-one {
+  background-image:
+    url("https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=900&q=80");
+}
+
+.image-two {
+  background-image:
+    url("https://images.unsplash.com/photo-1560253023-3ec5d502959f?auto=format&fit=crop&w=900&q=80");
+}
+
+.image-three {
+  background-image:
+    url("https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=900&q=80");
+}
+
+.news-content {
+  padding: 20px;
+}
+
+.news-content > span {
+  color: #5b9cff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.news-content h3 {
+  font-size: 19px;
+  margin: 8px 0;
+}
+
+.news-content p {
+  color: #aeb9cd;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.news-content small {
+  color: #718099;
+}
+
+
+/* ESPORTS */
+
+.esports-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.esports-box {
+  background: linear-gradient(145deg, #131d30, #0d1422);
+  padding: 30px;
+  border: 1px solid #293751;
+  border-radius: 18px;
+}
+
+.icon {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.esports-box h3 {
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+
+.esports-box p {
+  color: #aeb9cd;
+  margin-bottom: 20px;
+}
+
+.esports-box a {
+  color: #5b9cff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/* TOURNAMENT */
+
+.tournament-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tournament {
+  background: #111827;
+  border: 1px solid #27354e;
+  border-radius: 14px;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.tournament-icon {
+  font-size: 27px;
+}
+
+.tournament div:nth-child(2) {
+  flex: 1;
+}
+
+.tournament h3 {
+  font-size: 17px;
+}
+
+.tournament p {
+  color: #8592a9;
+  font-size: 13px;
+}
+
+.tournament strong {
+  color: #5b9cff;
+  font-size: 13px;
+}
+
+
+/* FOOTER */
+
+footer {
+  background: #101827;
+  border-top: 1px solid #27354e;
+  text-align: center;
+  padding: 45px 20px;
+}
+
+footer h2 {
+  color: #4b91ff;
+  margin-bottom: 5px;
+}
+
+footer p {
+  color: #8794aa;
+}
+
+.footer-links {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: #cbd4e3;
+  text-decoration: none;
+}
+
+footer small {
+  color: #69758b;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .site-header {
+    min-height: 150px;
+  }
+
+  .logo-area h1 {
+    font-size: 40px;
+  }
+
+  .logo-area p {
+    font-size: 14px;
+  }
+
+  .menu-button {
+    display: block;
+    position: absolute;
+    right: 18px;
+    top: 18px;
+  }
+
+  nav {
+    display: none;
+    height: auto;
+    flex-direction: column;
+    gap: 0;
+    align-items: stretch;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav a {
+    padding: 14px 20px;
+    border-bottom: 1px solid #202b40;
+  }
+
+  main {
+    padding: 25px 15px;
+  }
+
+  .hero {
+    min-height: 450px;
+  }
+
+  .hero-content {
+    padding: 28px;
+  }
+
+  .hero h2 {
+    font-size: 31px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .game-grid,
+  .news-grid,
+  .esports-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .game-card {
+    min-height: 190px;
+  }
+
+  .game-info {
+    padding: 15px;
+  }
+
+  .game-info h3 {
+    font-size: 17px;
+  }
+
+  .game-info p {
+    font-size: 11px;
+  }
+
+  .news-grid {
+    gap: 12px;
+  }
+
+  .news-image {
+    height: 130px;
+  }
+
+  .news-content {
+    padding: 14px;
+  }
+
+  .news-content h3 {
+    font-size: 16px;
+  }
+
+  .news-content p {
+    font-size: 12px;
+  }
+
+  .esports-box {
+    padding: 20px;
+  }
+
+  .tournament {
+    padding: 15px;
+  }
+
+  .tournament strong {
+    display: none;
+  }
+}
+
+
+@media (max-width: 430px) {
+
+  .game-grid,
+  .news-grid,
+  .esports-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h2 {
+    font-size: 29px;
+  }
+
+  .section-title h2 {
+    font-size: 26px;
+  }
+
+  }
