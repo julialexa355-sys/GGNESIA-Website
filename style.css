@@ -5,101 +5,181 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background: #0b0f19;
-  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #080c16;
+  color: #f5f7ff;
   line-height: 1.6;
 }
 
+/* HEADER */
 header {
-  background: #111827;
-  padding: 25px 20px;
+  background:
+    linear-gradient(135deg, #111a31, #0b1020);
+  padding: 45px 20px;
   text-align: center;
-  border-bottom: 2px solid #2563eb;
+  border-bottom: 3px solid #2878ff;
 }
 
 header h1 {
-  font-size: 36px;
-  color: #3b82f6;
+  font-size: 46px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #4b91ff;
+  text-shadow: 0 0 20px rgba(75, 145, 255, 0.35);
 }
 
 header p {
-  color: #9ca3af;
+  margin-top: 8px;
+  color: #aab4c8;
+  font-size: 17px;
 }
 
+/* NAVIGATION */
 nav {
-  background: #151b2b;
+  background: #111827;
   display: flex;
   justify-content: center;
-  gap: 25px;
-  padding: 15px;
+  gap: 30px;
+  padding: 17px 10px;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 100;
+  border-bottom: 1px solid #202a3d;
 }
 
 nav a {
-  color: white;
+  color: #e7ebf4;
   text-decoration: none;
   font-weight: bold;
+  font-size: 16px;
+  transition: 0.2s;
 }
 
 nav a:hover {
-  color: #3b82f6;
+  color: #4b91ff;
 }
 
+/* MAIN */
 main {
   max-width: 1100px;
   margin: auto;
-  padding: 30px 20px;
+  padding: 40px 20px;
 }
 
 section {
-  margin-bottom: 35px;
+  margin-bottom: 50px;
 }
 
 section h2 {
-  font-size: 25px;
-  margin-bottom: 15px;
-  border-left: 4px solid #3b82f6;
-  padding-left: 10px;
+  font-size: 28px;
+  margin-bottom: 22px;
+  padding-left: 14px;
+  border-left: 5px solid #3d8bff;
 }
 
+/* INTRO */
+section:first-child {
+  background: linear-gradient(135deg, #111a2d, #0c1323);
+  padding: 35px;
+  border-radius: 18px;
+  border: 1px solid #26344e;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+section:first-child p {
+  color: #b9c3d5;
+  font-size: 17px;
+}
+
+/* GAME CARDS */
 section > div {
-  background: #151b2b;
-  padding: 20px;
-  margin-bottom: 12px;
-  border-radius: 10px;
-  border: 1px solid #252d3d;
+  background: linear-gradient(145deg, #151e31, #101726);
+  padding: 25px;
+  margin-bottom: 16px;
+  border-radius: 16px;
+  border: 1px solid #26344d;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+section > div:hover {
+  transform: translateY(-4px);
+  border-color: #3d8bff;
 }
 
 section > div h3 {
-  color: #60a5fa;
+  color: #62a0ff;
+  font-size: 21px;
+  margin-bottom: 8px;
 }
 
+section > div p {
+  color: #d3d9e5;
+}
+
+/* ESPORTS */
+section:last-of-type {
+  background: #111827;
+  padding: 30px;
+  border-radius: 18px;
+  border: 1px solid #26344d;
+}
+
+section:last-of-type p {
+  color: #b9c3d5;
+}
+
+/* FOOTER */
 footer {
   background: #111827;
   text-align: center;
-  padding: 25px;
-  color: #9ca3af;
-  margin-top: 40px;
+  padding: 35px 20px;
+  margin-top: 30px;
+  border-top: 1px solid #26344d;
 }
 
+footer p {
+  color: #8793a8;
+}
+
+/* MOBILE */
 @media (max-width: 600px) {
+
+  header {
+    padding: 35px 15px;
+  }
+
   header h1 {
-    font-size: 30px;
+    font-size: 38px;
+  }
+
+  header p {
+    font-size: 15px;
   }
 
   nav {
-    gap: 12px;
-    flex-wrap: wrap;
+    gap: 18px;
+    overflow-x: auto;
+    justify-content: flex-start;
+    white-space: nowrap;
   }
 
   nav a {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   main {
-    padding: 20px 15px;
+    padding: 25px 15px;
+  }
+
+  section h2 {
+    font-size: 25px;
+  }
+
+  section:first-child {
+    padding: 25px;
+  }
+
+  section > div {
+    padding: 22px;
   }
 }
