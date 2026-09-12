@@ -73,22 +73,27 @@ async function loadNews() {
             const image = document.createElement("div");
             image.className = "news-image image-one";
 
-            let imageUrl = item.thumbnail || "";
+            let imageUrl = "";
 
-if (!imageUrl && item.description) {
+if (item.thumbnail) {
+    imageUrl = item.thumbnail;
+} else if (item.enclosure && item.enclosure.link) {
+    imageUrl = item.enclosure.link;
+} else if (item.description) {
     const tempImage = document.createElement("div");
     tempImage.innerHTML = item.description;
 
     const imgTag = tempImage.querySelector("img");
 
-    if (imgTag) {
+    if (imgTag && imgTag.src) {
         imageUrl = imgTag.src;
     }
 }
 
+image.style.backgroundImage = "none";
+
 if (imageUrl) {
-    image.style.backgroundImage =
-        `url("${imageUrl}")`;
+    image.style.backgroundImage = `url("${imageUrl}")`;
     image.style.backgroundSize = "cover";
     image.style.backgroundPosition = "center";
 }
