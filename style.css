@@ -609,3 +609,11 @@ footer small {
   }
 
   }
+.news-content h3 a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.news-content h3 a:hover {
+    color: #5bb9ff;
+}
