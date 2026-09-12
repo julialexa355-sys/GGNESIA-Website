@@ -267,7 +267,79 @@ footer p {
 
   .hero-content {
     padding: 25px;
+  } /* PERBAIKAN HERO */
+
+section:first-child.hero {
+  padding: 0;
+  margin-bottom: 50px;
+  min-height: 400px;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 9, 18, 0.96) 0%,
+      rgba(5, 9, 18, 0.75) 55%,
+      rgba(5, 9, 18, 0.35) 100%
+    ),
+    url("https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1400&q=80");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+
+  border: 1px solid #293751;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 700px;
+  padding: 45px;
+}
+
+.hero h2 {
+  border: none;
+  padding: 0;
+  margin: 15px 0 18px;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.hero-button {
+  color: white !important;
+  background: #2878ff;
+  padding: 13px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.hero-button:hover {
+  background: #1765df;
+}
+
+@media (max-width: 600px) {
+  section:first-child.hero {
+    min-height: 430px;
   }
+
+  .hero-content {
+    padding: 28px;
+  }
+
+  .hero h2 {
+    font-size: 30px;
+  }
+}
 
   .hero h2 {
     font-size: 30px;
